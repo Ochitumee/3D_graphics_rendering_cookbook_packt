@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  graphics_3d:
+    image: graphics_3d
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - .:/usr/src/myapp
